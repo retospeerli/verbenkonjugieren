@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb-Konjugation Game - Deutsche Verben</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Verb-Konjugation Game</h1>
+            <p class="subtitle">Teste dein Wissen über deutsche Verbkonjugationen</p>
+        </header>
+        
+        <div class="game-stats">
+            <div class="stat">
+                <div class="stat-value" id="score">0</div>
+                <div class="stat-label">Punkte</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="streak">0</div>
+                <div class="stat-label">Aktuelle Serie</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="round">1/10</div>
+                <div class="stat-label">Runde</div>
+            </div>
+        </div>
+        
+        <div class="tense-selection">
+            <h3>Zeitform wählen:</h3>
+            <div class="tense-buttons">
+                <button class="tense-btn active" data-tense="präsens">Präsens</button>
+                <button class="tense-btn" data-tense="präteritum">Präteritum</button>
+                <button class="tense-btn" data-tense="perfekt">Perfekt</button>
+                <button class="tense-btn" data-tense="plusquamperfekt">Plusquamperfekt</button>
+            </div>
+        </div>
+        
+        <div class="current-verb-container">
+            <p class="pronoun" id="pronoun">ich</p>
+            <h2 class="current-verb" id="current-verb">spielen</h2>
+            <p class="instructions-text">Wähle die richtige konjugierte Form</p>
+        </div>
+        
+        <div class="feedback" id="feedback"></div>
+        
+        <div class="choices-container">
+            <button class="choice-btn" id="choice1">spiele</button>
+            <button class="choice-btn" id="choice2">spielst</button>
+            <button class="choice-btn" id="choice3">spielt</button>
+            <button class="choice-btn" id="choice4">spielen</button>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn start-btn" id="start-btn">Spiel starten</button>
+            <button class="control-btn hint-btn" id="hint-btn">Tipp anzeigen</button>
+            <button class="control-btn reset-btn" id="reset-btn">Spiel zurücksetzen</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>Spielanleitung</h3>
+            <p>Das Ziel des Spiels ist es, die korrekte konjugierte Form des angezeigten Verbs für das gewählte Personalpronomen und die gewählte Zeitform auszuwählen. Für jede richtige Antwort erhältst du 10 Punkte. Nach 10 Runden endet das Spiel. Bei 3 oder mehr richtigen Antworten in Folge erhältst du Bonuspunkte!</p>
+        </div>
+    </div>
+    
+    <div class="game-over" id="game-over">
+        <div class="game-over-content">
+            <h2 id="game-result">Spiel beendet!</h2>
+            <p id="game-message">Du hast das Spiel mit folgendem Ergebnis abgeschlossen:</p>
+            <div class="score" id="final-score">0 Punkte</div>
+            <div class="result-details">
+                <p>Richtige Antworten: <span id="correct-answers">0</span>/10</p>
+                <p>Längste Serie: <span id="max-streak">0</span></p>
+                <p>Gesamtpunkte: <span id="total-score">0</span></p>
+            </div>
+            <button class="restart-btn" id="restart-btn">Neues Spiel starten</button>
+        </div>
+    </div>
+    
+    <!-- Audio-Elemente -->
+    <audio id="correct-sound" src="audio/correct.wav" preload="auto"></audio>
+    <audio id="error-sound" src="audio/error.wav" preload="auto"></audio>
+    <audio id="gamewon-sound" src="audio/gamewon.wav" preload="auto"></audio>
+    <audio id="gamelost-sound" src="audio/gamelost.wav" preload="auto"></audio>
+    <audio id="roundwon-sound" src="audio/roundwon.wav" preload="auto"></audio>
+    <audio id="roundlost-sound" src="audio/roundlost.wav" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
