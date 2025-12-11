@@ -99,6 +99,7 @@ h1 {
 .tense-selection h3 {
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .tense-buttons {
@@ -132,11 +133,19 @@ h1 {
 .current-verb-container {
     text-align: center;
     margin: 30px 0;
-    padding: 25px;
+    padding: 30px 25px;
     background-color: #f8f9fa;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     position: relative;
+}
+
+.pronoun {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    line-height: 1;
 }
 
 .current-verb {
@@ -145,17 +154,17 @@ h1 {
     color: var(--primary-color);
     margin: 0;
     line-height: 1.2;
-    min-height: 100px;
+    min-height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.pronoun {
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.instructions-text {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-style: italic;
 }
 
 .choices-container {
@@ -370,9 +379,14 @@ h1 {
         font-size: 2rem;
     }
     
+    .pronoun {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+    
     .current-verb {
-        font-size: 3.5rem;
-        min-height: 90px;
+        font-size: 3rem;
+        min-height: 70px;
     }
     
     .choices-container {
@@ -398,11 +412,21 @@ h1 {
     .controls {
         flex-wrap: wrap;
     }
+    
+    .instructions-text {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 480px) {
+    .pronoun {
+        font-size: 2.2rem;
+    }
+    
     .current-verb {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        min-height: 60px;
     }
     
     .game-stats {
@@ -416,5 +440,10 @@ h1 {
     
     .tense-btn {
         width: 100%;
+    }
+    
+    .control-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
     }
 }
