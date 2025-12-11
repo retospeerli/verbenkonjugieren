@@ -39,7 +39,7 @@ const VERB_LIST = [
       type: "strong" },
     
     { infinitive: "sehen", präsens: { ich: "sehe", du: "siehst", er: "sieht", wir: "sehen", ihr: "seht", sie: "sehen" }, 
-      präteritum: { ich: "sah", du: "sahst", er: "sah", wir: "sahnen", ihr: "saht", sie: "sahnen" },
+      präteritum: { ich: "sah", du: "sahst", er: "sah", wir: "sahen", ihr: "saht", sie: "sahen" },
       perfekt: { ich: "habe gesehen", du: "hast gesehen", er: "hat gesehen", wir: "haben gesehen", ihr: "habt gesehen", sie: "haben gesehen" },
       plusquamperfekt: { ich: "hatte gesehen", du: "hattest gesehen", er: "hatte gesehen", wir: "hatten gesehen", ihr: "hattet gesehen", sie: "hatten gesehen" },
       type: "strong" },
@@ -97,56 +97,7 @@ const VERB_LIST = [
       präteritum: { ich: "mochte", du: "mochtest", er: "mochte", wir: "mochten", ihr: "mochtet", sie: "mochten" },
       perfekt: { ich: "habe gemocht", du: "hast gemocht", er: "hat gemocht", wir: "haben gemocht", ihr: "habt gemocht", sie: "haben gemocht" },
       plusquamperfekt: { ich: "hatte gemocht", du: "hattest gemocht", er: "hatte gemocht", wir: "hatten gemocht", ihr: "hattet gemocht", sie: "hatten gemocht" },
-      type: "modal" },
-    
-    // Weitere wichtige Verben
-    { infinitive: "gehen", präsens: { ich: "gehe", du: "gehst", er: "geht", wir: "gehen", ihr: "geht", sie: "gehen" }, 
-      präteritum: { ich: "ging", du: "gingst", er: "ging", wir: "gingen", ihr: "gingt", sie: "gingen" },
-      perfekt: { ich: "bin gegangen", du: "bist gegangen", er: "ist gegangen", wir: "sind gegangen", ihr: "seid gegangen", sie: "sind gegangen" },
-      plusquamperfekt: { ich: "war gegangen", du: "warst gegangen", er: "war gegangen", wir: "waren gegangen", ihr: "wart gegangen", sie: "waren gegangen" },
-      type: "strong" },
-    
-    { infinitive: "kommen", präsens: { ich: "komme", du: "kommst", er: "kommt", wir: "kommen", ihr: "kommt", sie: "kommen" }, 
-      präteritum: { ich: "kam", du: "kamst", er: "kam", wir: "kamen", ihr: "kamt", sie: "kamen" },
-      perfekt: { ich: "bin gekommen", du: "bist gekommen", er: "ist gekommen", wir: "sind gekommen", ihr: "seid gekommen", sie: "sind gekommen" },
-      plusquamperfekt: { ich: "war gekommen", du: "warst gekommen", er: "war gekommen", wir: "waren gekommen", ihr: "wart gegangen", sie: "waren gegangen" },
-      type: "strong" },
-    
-    { infinitive: "machen", präsens: { ich: "mache", du: "machst", er: "macht", wir: "machen", ihr: "macht", sie: "machen" }, 
-      präteritum: { ich: "machte", du: "machtest", er: "machte", wir: "machten", ihr: "machtet", sie: "machten" },
-      perfekt: { ich: "habe gemacht", du: "hast gemacht", er: "hat gemacht", wir: "haben gemacht", ihr: "habt gemacht", sie: "haben gemacht" },
-      plusquamperfekt: { ich: "hatte gemacht", du: "hattest gemacht", er: "hatte gemacht", wir: "hatten gemacht", ihr: "hattet gemacht", sie: "hatten gemacht" },
-      type: "regular" },
-    
-    { infinitive: "sagen", präsens: { ich: "sage", du: "sagst", er: "sagt", wir: "sagen", ihr: "sagt", sie: "sagen" }, 
-      präteritum: { ich: "sagte", du: "sagtest", er: "sagte", wir: "sagten", ihr: "sagtet", sie: "sagten" },
-      perfekt: { ich: "habe gesagt", du: "hast gesagt", er: "hat gesagt", wir: "haben gesagt", ihr: "habt gesagt", sie: "haben gesagt" },
-      plusquamperfekt: { ich: "hatte gesagt", du: "hattest gesagt", er: "hatte gesagt", wir: "hatten gesagt", ihr: "hattet gesagt", sie: "hatten gesagt" },
-      type: "regular" },
-    
-    { infinitive: "finden", präsens: { ich: "finde", du: "findest", er: "findet", wir: "finden", ihr: "findet", sie: "finden" }, 
-      präteritum: { ich: "fand", du: "fandest", er: "fand", wir: "fanden", ihr: "fandet", sie: "fanden" },
-      perfekt: { ich: "habe gefunden", du: "hast gefunden", er: "hat gefunden", wir: "haben gefunden", ihr: "habt gefunden", sie: "haben gefunden" },
-      plusquamperfekt: { ich: "hatte gefunden", du: "hattest gefunden", er: "hatte gefunden", wir: "hatten gefunden", ihr: "hattet gefunden", sie: "hatten gefunden" },
-      type: "strong" },
-    
-    { infinitive: "bleiben", präsens: { ich: "bleibe", du: "bleibst", er: "bleibt", wir: "bleiben", ihr: "bleibt", sie: "bleiben" }, 
-      präteritum: { ich: "blieb", du: "bliebst", er: "blieb", wir: "blieben", ihr: "bliebt", sie: "blieben" },
-      perfekt: { ich: "bin geblieben", du: "bist geblieben", er: "ist geblieben", wir: "sind geblieben", ihr: "seid geblieben", sie: "sind geblieben" },
-      plusquamperfekt: { ich: "war geblieben", du: "warst geblieben", er: "war geblieben", wir: "waren geblieben", ihr: "wart geblieben", sie: "waren geblieben" },
-      type: "strong" },
-    
-    { infinitive: "liegen", präsens: { ich: "liege", du: "liegst", er: "liegt", wir: "liegen", ihr: "liegt", sie: "liegen" }, 
-      präteritum: { ich: "lag", du: "lagst", er: "lag", wir: "lagen", ihr: "lagt", sie: "lagen" },
-      perfekt: { ich: "habe gelegen", du: "hast gelegen", er: "hat gelegen", wir: "haben gelegen", ihr: "habt gelegen", sie: "haben gelegen" },
-      plusquamperfekt: { ich: "hatte gelegen", du: "hattest gelegen", er: "hatte gelegen", wir: "hatten gelegen", ihr: "hattet gelegen", sie: "hatten gelegen" },
-      type: "strong" },
-    
-    { infinitive: "stehen", präsens: { ich: "stehe", du: "stehst", er: "steht", wir: "stehen", ihr: "steht", sie: "stehen" }, 
-      präteritum: { ich: "stand", du: "standest", er: "stand", wir: "standen", ihr: "standet", sie: "standen" },
-      perfekt: { ich: "habe gestanden", du: "hast gestanden", er: "hat gestanden", wir: "haben gestanden", ihr: "habt gestanden", sie: "haben gestanden" },
-      plusquamperfekt: { ich: "hatte gestanden", du: "hattest gestanden", er: "hatte gestanden", wir: "hatten gestanden", ihr: "hattet gestanden", sie: "hatten gestanden" },
-      type: "strong" }
+      type: "modal" }
 ];
 
 // Personalpronomen in der richtigen Reihenfolge
@@ -184,9 +135,6 @@ function generateWrongAnswers(verb, tense, pronoun, correctAnswer) {
     }
     
     // Strategie 2: Typische Fehler basierend auf Verbtyp
-    const verbStem = verb.infinitive.replace(/en$/, '');
-    const wrongStem = verbStem + (verbStem.endsWith('t') || verbStem.endsWith('d') ? 'e' : '');
-    
     if (tense === "präsens") {
         const typicalErrors = generatePresentErrors(verb, pronoun, correctAnswer);
         typicalErrors.forEach(error => {
@@ -208,56 +156,15 @@ function generateWrongAnswers(verb, tense, pronoun, correctAnswer) {
     
     // Strategie 4: Komplett falsche Formen generieren
     while (wrongAnswers.length < 3) {
-        let wrongForm;
-        
-        if (tense === "präsens" || tense === "präteritum") {
-            // Falsche Endungen
-            const wrongEndings = ["e", "st", "t", "en", "et", "en"];
-            const randomEnding = wrongEndings[Math.floor(Math.random() * wrongEndings.length)];
-            wrongForm = verbStem + randomEnding;
-            
-            // Bei starken Verben im Präsens: falsche Vokaländerung
-            if (verbType === "strong" && tense === "präsens") {
-                if (pronoun === "du" || pronoun === "er") {
-                    wrongForm = verbStem.replace(/[aeiou]/g, char => {
-                        const changes = {a: 'e', e: 'i', i: 'e', o: 'e', u: 'e'};
-                        return changes[char] || char;
-                    }) + (pronoun === "du" ? "st" : "t");
-                }
-            }
-        } else if (tense === "perfekt" || tense === "plusquamperfekt") {
-            // Falsche Hilfsverben oder Partizipien
-            const wrongParticiples = [
-                correctAnswer.replace(/ge/, 'be'),
-                correctAnswer.replace(/ge/, 'er'),
-                correctAnswer.replace(/ge/, 'ver')
-            ];
-            wrongForm = wrongParticiples[Math.floor(Math.random() * wrongParticiples.length)];
-            
-            // Falsches Hilfsverb
-            if (Math.random() > 0.5) {
-                wrongForm = wrongForm.replace(/habe|hast|hat|haben|habt/, match => {
-                    const replacements = {
-                        "habe": "bin", "hast": "bist", "hat": "ist",
-                        "haben": "sind", "habt": "seid",
-                        "bin": "habe", "bist": "hast", "ist": "hat",
-                        "sind": "haben", "seid": "habt"
-                    };
-                    return replacements[match] || match;
-                });
-            }
-        }
-        
-        if (wrongForm && wrongForm !== correctAnswer && !wrongAnswers.includes(wrongForm)) {
-            wrongAnswers.push(wrongForm);
+        // Fallback: Einfach eine andere korrekte Form nehmen
+        const otherPronouns = PRONOUNS_KEYS.filter(p => p !== pronoun);
+        const randomPronoun = otherPronouns[Math.floor(Math.random() * otherPronouns.length)];
+        const fallbackForm = currentTenseForms[randomPronoun];
+        if (fallbackForm !== correctAnswer && !wrongAnswers.includes(fallbackForm)) {
+            wrongAnswers.push(fallbackForm);
         } else {
-            // Fallback: Einfach eine andere korrekte Form nehmen
-            const otherPronouns = PRONOUNS_KEYS.filter(p => p !== pronoun);
-            const randomPronoun = otherPronouns[Math.floor(Math.random() * otherPronouns.length)];
-            const fallbackForm = currentTenseForms[randomPronoun];
-            if (fallbackForm !== correctAnswer && !wrongAnswers.includes(fallbackForm)) {
-                wrongAnswers.push(fallbackForm);
-            }
+            // Falls alle Formen gleich sind, breche ab
+            break;
         }
     }
     
@@ -291,39 +198,12 @@ function generatePresentErrors(verb, pronoun, correctAnswer) {
             break;
         case "ihr":
             errors.push(verbStem + "en");  // Infinitiv statt ihr-Form
-            errors.push(verbStem + "t");   // er-Form statt ihr-Form (tatsächlich korrekt!)
             errors.push(verbStem + "et");  // Falsche Endung
             break;
         case "sie":
             errors.push(verbStem + "t");   // ihr-Form statt sie-Form
             errors.push(verbStem + "e");   // ich-Form statt sie-Form
             break;
-    }
-    
-    // Besondere Fehler für starke Verben
-    if (verb.type === "strong") {
-        if (pronoun === "du" || pronoun === "er") {
-            // Falsche Vokaländerung
-            const wrongVowel = verbStem.replace(/[aeiouäöü]/g, char => {
-                const wrongChanges = {
-                    'a': 'o', 'e': 'a', 'i': 'e', 'o': 'u', 'u': 'o',
-                    'ä': 'e', 'ö': 'u', 'ü': 'o'
-                };
-                return wrongChanges[char] || char;
-            });
-            errors.push(wrongVowel + (pronoun === "du" ? "st" : "t"));
-        }
-    }
-    
-    // Besondere Fehler für Modalverben
-    if (verb.type === "modal") {
-        const modalErrors = {
-            "ich": ["könne", "müsse", "wolle", "solle", "dürfe", "möge"],
-            "du": ["kannst", "musst", "willst", "sollst", "darfst", "magst"]
-        };
-        if (modalErrors[pronoun]) {
-            errors.push(...modalErrors[pronoun].filter(e => e !== correctAnswer));
-        }
     }
     
     return errors.filter(e => e !== correctAnswer);
@@ -433,7 +313,7 @@ function displayExample() {
     const exampleTense = gameState.currentTense;
     
     currentVerbElement.textContent = exampleVerb.infinitive;
-    pronounElement.textContent = examplePronoun;
+    pronounElement.textContent = PRONOUNS[PRONOUNS_KEYS.indexOf(examplePronoun)];
     
     const correctAnswer = exampleVerb[exampleTense][examplePronoun];
     const wrongAnswers = generateWrongAnswers(exampleVerb, exampleTense, examplePronoun, correctAnswer);
@@ -496,7 +376,7 @@ function loadNextRound() {
     
     gameState.usedCombinations.push(combination);
     
-    // UI aktualisieren
+    // UI aktualisieren mit großem Pronomen
     currentVerbElement.textContent = gameState.currentVerb.infinitive;
     pronounElement.textContent = PRONOUNS[randomPronounIndex];
     roundElement.textContent = `${gameState.round}/${gameState.maxRound}`;
@@ -578,8 +458,8 @@ function checkAnswer(selectedAnswer) {
             gameState.maxStreak = gameState.streak;
         }
         
-        // Feedback anzeigen
-        feedbackElement.textContent = `✓ Richtig! ${gameState.currentPronoun} ${gameState.currentVerb.infinitive} → ${correctAnswer}`;
+        // Feedback anzeigen mit großem Pronomen
+        feedbackElement.textContent = `✓ Richtig! ${PRONOUNS[PRONOUNS_KEYS.indexOf(gameState.currentPronoun)]} ${gameState.currentVerb.infinitive} → ${correctAnswer}`;
         feedbackElement.className = "feedback correct";
         
         // Sound abspielen
@@ -596,8 +476,8 @@ function checkAnswer(selectedAnswer) {
         // Falsche Antwort
         gameState.streak = 0;
         
-        // Feedback anzeigen
-        feedbackElement.textContent = `✗ Falsch! ${gameState.currentPronoun} ${gameState.currentVerb.infinitive} → ${correctAnswer}`;
+        // Feedback anzeigen mit großem Pronomen
+        feedbackElement.textContent = `✗ Falsch! ${PRONOUNS[PRONOUNS_KEYS.indexOf(gameState.currentPronoun)]} ${gameState.currentVerb.infinitive} → ${correctAnswer}`;
         feedbackElement.className = "feedback error";
         
         // Sound abspielen
@@ -638,7 +518,7 @@ function endGame() {
     
     if (percentage >= 80) {
         gameResultElement.textContent = "Ausgezeichnet!";
-        gameMessageElement.textContent = "Du beherrscht die Verbkonjugation perfekt!";
+        gameMessageElement.textContent = "Du beherrschst die Verbkonjugation perfekt!";
         gameWonSound.currentTime = 0;
         gameWonSound.play();
     } else if (percentage >= 60) {
@@ -680,7 +560,7 @@ function showHint() {
     
     const hints = [
         `Das Verb "${gameState.currentVerb.infinitive}" ist ein ${gameState.currentVerb.type === "regular" ? "regelmäßiges" : "unregelmäßiges"} Verb.`,
-        `Bei ${gameState.currentPronoun} endet die Präsensform meist auf ${getTypicalEnding(gameState.currentPronoun)}.`,
+        `Bei ${PRONOUNS[PRONOUNS_KEYS.indexOf(gameState.currentPronoun)]} endet die Präsensform meist auf ${getTypicalEnding(gameState.currentPronoun)}.`,
         `Achte auf Besonderheiten bei ${gameState.currentVerb.type === "strong" ? "starken" : gameState.currentVerb.type === "modal" ? "Modal" : "regelmäßigen"} Verben.`,
         `Im ${gameState.currentTense} wird bei "${gameState.currentVerb.infinitive}" oft ${getTenseHint(gameState.currentTense)}.`
     ];
